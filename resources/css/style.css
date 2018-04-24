@@ -85,6 +85,10 @@ header {
   align-items: center;
 }
 
+.navigation .tablet {
+  display: none;
+}
+
 /*Products section*/
 
 .store {
@@ -151,4 +155,31 @@ footer {
 
 footer p {
   padding-top: 2rem;
+}
+
+@media only screen and (max-width: 1024px) {
+
+.navigation ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation .tablet {
+  display: block;
+  color: white;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  }
+
+.navigation .pc {
+  display: none;
+}
+
+.product {
+  width: 47%;
+}
+
+.glasses {
+  display: none;
 }
